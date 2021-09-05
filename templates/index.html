@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Komoditas</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+</head>
+</head>
+<body>
+    <header>
+        <div class="container">
+          <div class="header">
+              <div class="clear"></div>
+            <h1> My Komoditas </h1>
+          </div>
+        </div>
+    </header>
+    <div class="top-wrapper">
+        <div class="container">
+          <h1>Rekomendasi Pengelolaan Lahan</h1>
+          <h2>Membantu Petani Menentukan Pilihan Komoditas</h2>
+          <p>My Komoditas adalah platform online untuk merencanakan komoditas pertanian Anda.</p>
+          <p>Kami menjalankan berbasis RPL Kementrian Pertanian untuk meninjau karakteristik lahan yang sesuai.</p>
+        </div>
+      </div>
+    <div class="message-wrapper">
+        <div class="container">
+            <h3>Masukkan ketinggian dan jenis lahan Anda!</h3>
+            <form method="POST", action="{{url_for('home')}}">
+                <b> Ketinggian :  <input type="number", name='a'> <br><br>
+                    Jenis Lahan :  <input type="text", name='b'> <br><br><br></b>
+                    <input type="submit" , value='Hasil' >
+                </form>
+        </div>
+      </div>
+    <footer>
+        <div class="container">
+            <h1>My Komoditas</h1>
+            <p>Leading Precission Agriculture.</p>
+        </div>
+      </footer>
+</body>
+</html>
