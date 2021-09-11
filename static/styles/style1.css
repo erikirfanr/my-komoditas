@@ -86,7 +86,7 @@ footer {
 
   .message-wrapper img {
     padding-bottom: 20px;
-    size: auto;
+    width: 90%;
   }
 
   .message-wrapper {
@@ -130,7 +130,7 @@ footer {
   }
 
   .message-wrapper img {
-    size: auto;
-    padding-bottom: 20px;
+    width: 90%;
+    padding: 20px 0 20px 0;
   }
 }
