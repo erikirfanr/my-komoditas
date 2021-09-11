@@ -3,8 +3,7 @@
 }
 
 html, body,
-ul, ol, li,
-h1, h2, h3, h4, h5, h6, p, div {
+h1, h2, h3, p, div {
   margin: 0;
   padding: 0;
 }
@@ -17,13 +16,12 @@ header {
   height: 65px;
   width: 100%;
   background-color: rgba(34, 49, 52, 0.9);
-  position: fixed;
   top: 0;
   z-index: 10;
+  position: fixed;
 }
 
 .header {
-  float: left;
   color: white;
   padding-top: 13px;
 }
@@ -32,7 +30,7 @@ header {
   padding: 180px 0 100px 0;
   background-image: url(https://1.bp.blogspot.com/-ZSRww3PFY98/XuRI4wgWgyI/AAAAAAAAFP4/0AtvRL6GpK4k9VRRP0h5HLRNJr23H7dZwCLcBGAsYHQ/s1600/background%2Bhijau%2Bpadi.JPG);
   background-size: cover;
-  color: black;
+  color: rgb(8, 8, 8);
   text-align: center;
 }
 
@@ -42,22 +40,22 @@ header {
 }
 
 .top-wrapper h1 {
-  opacity: 0.8;
-  font-size: 45px;
-  letter-spacing: 5px;
-  margin-bottom: 10px;
+  opacity: 0.95;
+  font-size: 35px;
+  letter-spacing: 4px;
 }
 
 .top-wrapper h2 {
-  opacity: 0.8;
-  font-size: 38px;
-  letter-spacing: 5px;
+  opacity: 0.90;
+  font-size: 30px;
+  letter-spacing: 2px;
   margin-bottom: 10px;
 }
 
 .top-wrapper p {
-  opacity: 0.7;
+  opacity: 0.8;
   margin-bottom: 3px;
+  color: black;
 }
 
 .message-wrapper {
@@ -93,4 +91,98 @@ footer p {
 footer {
   padding-top: 20px;
   background-color: gray;
+}
+
+@media screen and (max-width: 960px) {
+  .header {
+    position: fixed;
+    font-size: 15px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .top-wrapper {
+    padding-bottom: 250px;
+    margin: auto;
+    padding-top: 300px;
+  }
+
+  .top-wrapper h2 {
+    font-size: 30px;
+    margin: auto;
+  }
+
+  .top-wrapper p {
+    margin: auto;
+    font-size: 25;
+  }
+
+  .message-wrapper h3 {
+    font-size: 27px;
+    padding-top: 40;
+    padding-bottom: 15px;
+  }
+
+  .message-wrapper form {
+    font-size: 24px;
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  header {
+    height: 40px;
+  }
+
+  .header {
+    padding-top: 8px;
+    font-size: 12px;
+  }
+
+  .top-wrapper {
+    padding: 200px 0 150px 0;
+  }
+
+  .top-wrapper h1 {
+    font-size: 22px;
+    letter-spacing: normal;
+  }
+
+  .top-wrapper h2 {
+    font-size: 20px;
+    letter-spacing: normal;
+  }
+
+  .top-wrapper p {
+    font-size: 14px;
+    opacity: 1;
+  }
+
+  footer {
+    height: 45px;
+    padding-top: 8px;
+  }
+
+  footer h1 {
+    font-size: 19px;
+  }
+
+  footer p {
+    font-size: 10px;
+  }
+
+  .message-wrapper {
+    padding-bottom: 30px;
+  }
+
+  .message-wrapper h3 {
+    font-size: 18px;
+    padding-top: 30px;
+  }
+
+  .message-wrapper form {
+    font-size: 18px;
+  }
 }

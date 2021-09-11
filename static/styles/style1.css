@@ -2,65 +2,135 @@
     box-sizing: border-box;
   }
   
-  html, body,
-  ul, ol, li,
-  h1, h2, h3, h4, h5, h6, p, div {
-    margin: 0;
-    padding: 0;
-  }
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+   padding: 0;
+}
   
-  body {
-    font-family: "Arial";
-  }
+body {
+  font-family: "Arial";
+}
   
-  header {
-    height: 65px;
-    width: 100%;
-    background-color: rgba(34, 49, 52, 0.9);
-    position: fixed;
-    top: 0;
-    z-index: 10;
-  }
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
   
-  .header {
-    float: left;
-    color: white;
-    padding-top: 13px;
-  }
+.header {
+  float: left;
+  color: white;
+  padding-top: 13px;
+}
 
-  .message-wrapper {
-    background-color: rgba(34, 49, 52, 0.9);
-    padding: 80px 0 120px 0;
-    text-align: center;
-  }
+.message-wrapper {
+  background-color: rgba(34, 49, 52, 0.9);
+  padding: 80px 0 120px 0;
+  text-align: center;
+}
 
-  .message-wrapper h3 {
-    font-size: 20px;
-    color: #eee;
-    margin-bottom: 25px;
-  }
+.message-wrapper h3 {
+  font-size: 20px;
+  color: #eee;
+  margin-bottom: 25px;
+}
   
 .message-wrapper h1 {
   font-size: 25px;
   color: #eee;
 }
 
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer h1 {
+  font-size: 24px;
+  color:rgba(4, 13, 15, 0.9);
+}
+
+footer p {
+  color: white;
+  font-size: 12px;
+}
+  
+footer {
+  padding-top: 20px;
+  background-color: gray;
+}
+
+@media screen and (max-width: 960px) {
+  .header {
+    position: fixed;
+    font-size: 15px;
+  }
+  
   .container {
-    width: 1200px;
-    margin: 0 auto;
+    width: 90%;
+  }
+
+  .message-wrapper h3 {
+    font-size: 25px;
+    padding: 80px 0 30px 0;
+  }
+
+  .message-wrapper h1 {
+    padding-bottom: 30px;
+  }
+
+  .message-wrapper img {
+    padding-bottom: 20px;
+    size: auto;
+  }
+
+  .message-wrapper {
+    padding: 100px 0 150px 0;
+  }
+
+}
+
+@media screen and (max-width: 460px) {
+  header {
+    height: 40px;
+  }
+
+  .header {
+    padding-top: 8px;
+    font-size: 12px;
+  }
+
+  footer {
+    height: 45px;
+    padding-top: 8px;
   }
 
   footer h1 {
-    font-size: 24px;
-    color:rgba(4, 13, 15, 0.9);
+    font-size: 19px;
   }
 
   footer p {
-    color: white;
-    font-size: 12px;
+    font-size: 10px;
   }
-  
-  footer {
-    padding-top: 20px;
-    background-color: gray;
+
+  .message-wrapper h3 {
+    padding-bottom: 40px;
+    padding-top: 50px;
+    font-size: 18px;
   }
+
+  .message-wrapper h1 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  .message-wrapper img {
+    size: auto;
+    padding-bottom: 20px;
+  }
+}
