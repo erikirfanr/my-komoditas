@@ -23,7 +23,6 @@ header {
 }
   
 .header {
-  float: left;
   color: white;
   padding-top: 13px;
 }
@@ -46,7 +45,7 @@ header {
 }
 
 .container {
-  width: 100%;
+  width: 1200px;
   margin: 0 auto;
 }
 

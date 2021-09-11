@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Komoditas</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style1.css') }}">
+    <link rel="stylesheet" href="style1.css">
 </head>
 </head>
 <body>
     <header>
         <div class="container">
-          <div class="header-left">
-              <div class="clear"></div>
+          <div class="header">
             <h1> My Komoditas </h1>
           </div>
         </div>
@@ -36,11 +36,13 @@
         {%elif data == 4%}
         <h1>Kakao</h1>
         <img src="static/Kakao.png">
-        <img src="static/Kakao1.png">
-
-        {%else%}
+        
+        {%elif data == 5%}
         <h1>Pakan Ternak</h1>
         <img src="static/Pakan Ternak.png">
+
+        {%else%}
+        <h1>Data Input Anda Salah</h1>
 
         {%endif%}
 
